@@ -7,32 +7,33 @@
 
 /*
 Colors used:
-  background-color: #dae0eb
-  text-color: #2b2b2b
-  hyperlink color: black
-  visited hyperlink color: black
-  active hyperlink color: black
-  mylink id color: #162f57
-Grid:
-  background-color: lightgray
-Table:
-  Border color: black
-  head's background-color: #656362
-  even rows' color: white
-Animation object colors:
-  object1 color: #edc655
-  object2 color: #fcffad
-  object3 color: #f76414
-Button colors:
-  backgound color: #357b70
-  text color: white
-Header and footer colors:
-  background color: lightgray
-  text color: black
+  /* backgound colors:
+  background color1: black
+  background color2: #61dffa
+  background color3: white
+
+  text colors:
+  text color1: white;
+  text color 2: black;
+
+  link colors:
+  link color 1: white;
+  link color 2: #61dffa;
+
+  border colors:
+  border color 1: white;
+  border color 2: black;
 */
 :root {
+  /* backgound colors: */
 
-  /* Font */
+  /* text colors: */
+
+  /* link colors: */
+
+  /* border colors: */
+
+  /* Font properties */
 }
 
 * {
@@ -41,30 +42,22 @@ Header and footer colors:
 }
 
 body {
+  /* Sets the font size to 16px */
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
 
-  /* Sets the font size to 16px */
+  /* Sets the line-height to 1.6 */
   line-height: 1.6;
 
-  /* Sets the line-height to 1.6 */
-  background-color: #dae0eb;
-  color: #2b2b2b;
+  /* Sets the colors */
+  background-color: black;
+  color: white;
 }
 
-input {
-  font-family: 'Lato', sans-serif;
-  border-radius: 3px;
-}
-
-select {
-  font-family: 'Lato', sans-serif;
-  border-radius: 3px;
-}
-
+input,
+select,
 button {
-  font-family: 'Lato', sans-serif;
   border-radius: 3px;
 }
 
@@ -84,27 +77,38 @@ h3 {
 }
 
 a {
-  color: black;
+  color: white;
+
+  /* No underlining */
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  /* No underlining when hovering over a link */
-  text-decoration: none;
+  /* Add underlining when hovering over a link */
+  text-decoration: underline;
 }
 
 a:visited {
   /* visited link */
-  color: black;
+
+  /* No different style added */
 }
 
 a:active {
   /* selected link */
-  color: black;
+
+  /* No extra stylings are  */
 }
 
-#my-link {
-  color: #162f57;
+.action {
+  font-size: 18px;
+}
+
+.my-link {
+  /* The links inside the page contents */
+  color: #61dffa;
+  text-decoration: underline;
 }
 
 .page-header {
@@ -114,10 +118,16 @@ a:active {
   width: 100%;
   height: 100px;
   padding: 20px;
-  background-color: #bcbcbc;
+
+  /* background-color: */
+  background-color: black;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
+  /* No borders displayed */
+
+  /* border-bottom: 3px solid var(--bd1-color); */
 }
 
 .page-header__item {
@@ -126,17 +136,20 @@ a:active {
           flex: 0 1 50px;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  width: 50px;
+  width: 100px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+
+  /* Aligns right the menu items */
   text-align: right;
 }
 
 .navigation-list {
+  /* Removes the Bullets */
   list-style-type: none;
 }
 
@@ -146,26 +159,28 @@ a:active {
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .navigation-list__item {
-  color: black;
+  color: white;
 }
 
 .profile {
   width: 80%;
+  height: 100%;
   margin: 0 auto;
-  margin-bottom: 100px;
+
+  /* margin-bottom: 100px; */
   text-align: justify;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
 .profile__portrait {
-  float: left;
-  width: 20%;
-  margin-right: 40px;
+  float: right;
+  width: 25%;
+  margin-left: 40px;
   margin-bottom: 100px;
   border-radius: 50%;
 }
@@ -182,28 +197,21 @@ a:active {
   margin-left: 40px;
 }
 
-table {
-  border: 1px solid black;
+.resume {
+  background-color: white;
+  border-radius: 3px;
+  color: black;
+  padding: 3px;
 }
 
-th {
-  border: 1px solid black;
-}
+.resume:hover {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  text-decoration: none;
 
-td {
-  border: 1px solid black;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
 }
-
-table {
-  border-collapse: collapse;
-}
-
-thead {
-  background-color: #656362;
-  color: white;
-}
-
-tr:nth-child(even) { background-color: white; }
 
 .work,
 .contact,
@@ -224,14 +232,14 @@ tr:nth-child(even) { background-color: white; }
   font-family: inherit;
 
   /* style button */
-  background-color: #357b70;
-  color: white;
+  background-color: white;
+  color: black;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
 
   /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid white;
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
@@ -248,14 +256,14 @@ button {
   font-family: inherit;
 
   /* style button */
-  background-color: #357b70;
-  color: white;
+  background-color: white;
+  color: black;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
 
   /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid white;
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
@@ -274,82 +282,14 @@ button:focus,
 
 /* start grid fallback */
 .grid__item {
-  color: #162f57;
+  /* color: var(--lnk2-color); */
+  color: white;
   display: inline-block;
   width: 33%;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-}
-
-@-webkit-keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.rCloud {
-  -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 0);
-            transform: translate(200px, 0);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 0);
-            transform: translate(200px, 0);
-  }
-}
-
-.lCloud {
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  -webkit-animation-name: cloud-move;
-          animation-name: cloud-move;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  border: 1px solid white;
 }
 
 /* end grid fallback */
@@ -367,19 +307,19 @@ button:focus,
   }
 
   .grid__item {
-    background-color: #bcbcbc;
+    /* background-color: var(--bg4-color); */
+    background-color: black;
     width: auto;
     min-height: auto;
     margin: 0;
+    -webkit-box-shadow: 5px 10px;
+            box-shadow: 5px 10px;
   }
 
-  .grid__item:last-child {
-    -ms-grid-column: 3;
+  /* .grid__item:last-child {
     grid-column: 3 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     grid-row: 1 / 3;
-  }
+  } */
 
   @media all and (max-width: 500px) {
     .grid {
@@ -435,6 +375,7 @@ button:focus,
   @media all and (min-width: 1024px) {
     .profile {
       text-align: justify;
+      margin: 10% auto;
       max-width: 1024px;
       font-size: 26px;
     }
@@ -464,10 +405,15 @@ button:focus,
   margin-bottom: 100px;
 }
 
+.contact__item {
+  margin: 0 auto;
+  width: 50%;
+}
+
 input[type=text] {
   width: 100%;
   padding: 20px;
-  border: 1px solid gray;
+  border: 1px solid black;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -476,7 +422,7 @@ input[type=text] {
 textarea {
   width: 100%;
   padding: 20px;
-  border: 1px solid gray;
+  border: 1px solid black;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -485,7 +431,7 @@ textarea {
 input[type=email] {
   width: 100%;
   padding: 20px;
-  border: 1px solid gray;
+  border: 1px solid black;
   margin-top: 6px;
   margin-bottom: 16px;
 }
@@ -493,7 +439,7 @@ input[type=email] {
 input[type=tel] {
   width: 100%;
   padding: 20px;
-  border: 1px solid gray;
+  border: 1px solid black;
   margin-top: 6px;
   margin-bottom: 16px;
 }
@@ -503,7 +449,7 @@ textarea {
 }
 
 input[type=submit] {
-  background-color: #bcbcbc;
+  background-color: #61dffa;
   color: black;
   padding: 20px;
   border: none;
@@ -511,17 +457,21 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #bcbcbc;
+  background-color: white;
 }
 
 .contact-form {
-  background-color: #656362;
-  color: white;
+  /* background-color: var(--bg3-color); */
+  color: undefined;
   text-align: left;
   padding: 20px;
+  width: 50%;
   max-width: 1024px;
   margin: 0 auto;
   border-radius: 3px;
+  border: 1px solid white;
+  -webkit-box-shadow: 5px 10px;
+          box-shadow: 5px 10px;
 }
 
 .standard-label-tel {
@@ -546,6 +496,6 @@ input[type=submit]:hover {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #bcbcbc;
-  color: black;
+  background-color: black;
+  color: white;
 }
