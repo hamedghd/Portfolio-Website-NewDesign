@@ -38,7 +38,7 @@ Colors used:
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -122,8 +122,8 @@ a:active {
   /* background-color: */
   background-color: black;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 
   /* No borders displayed */
 
@@ -132,17 +132,17 @@ a:active {
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50px;
-          flex: 0 1 50px;
+  -ms-flex: 0 1 50px;
+  flex: 0 1 50px;
   -ms-flex-line-pack: end;
-      align-content: flex-end;
+  align-content: flex-end;
   width: 100px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 
   /* Aligns right the menu items */
   text-align: right;
@@ -174,7 +174,7 @@ a:active {
   /* margin-bottom: 100px; */
   text-align: justify;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .profile__portrait {
@@ -313,7 +313,7 @@ button:focus,
     min-height: auto;
     margin: 0;
     -webkit-box-shadow: 5px 10px;
-            box-shadow: 5px 10px;
+    box-shadow: 5px 10px;
   }
 
   /* .grid__item:last-child {
@@ -358,8 +358,8 @@ button:focus,
       display: block;
       margin: 40px auto;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
 
     .profile {
@@ -462,7 +462,7 @@ input[type=submit]:hover {
 
 .contact-form {
   /* background-color: var(--bg3-color); */
-  color: undefined;
+  color: white;
   text-align: left;
   padding: 20px;
   width: 50%;
@@ -471,7 +471,7 @@ input[type=submit]:hover {
   border-radius: 3px;
   border: 1px solid white;
   -webkit-box-shadow: 5px 10px;
-          box-shadow: 5px 10px;
+  box-shadow: 5px 10px;
 }
 
 .standard-label-tel {
@@ -485,11 +485,10 @@ input[type=submit]:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
 
   /* create a fixed footer! */
   position: fixed;
