@@ -202,7 +202,7 @@ a:active {
   background-color: var(--bg3-color);
   border-radius: 3px;
   color: var(--txt2-color);
-  padding: 3px;
+  padding: 10px;
 }
 
 .resume:hover {
