@@ -199,8 +199,9 @@ a:active {
 
 .about-picture {
   float: right;
-  width: 50%;
-  margin-left: 100px;
+  width: 30%;
+  margin-left: 10%;
+  margin-bottom: 5%;
 }
 
 .resume {
