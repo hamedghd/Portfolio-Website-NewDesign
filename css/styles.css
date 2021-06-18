@@ -180,9 +180,10 @@ a:active {
 
 .profile__portrait {
   float: right;
-  width: 25%;
-  margin-left: 40px;
-  margin-bottom: 100px;
+  height: 250px;
+
+  /* top | right | bottom | left */
+  margin: auto 0 auto 100px;
   border-radius: 50%;
 }
 
@@ -226,6 +227,13 @@ a:active {
 .skype {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.github,
+.linkedin {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 40px;
 }
 
 .button,
