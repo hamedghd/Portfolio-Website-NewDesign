@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyFlix, a movie app</title>
+  <link rel="shortcut icon" href="img/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <a href="index.html" class="page-header__item"><img src="img/Hamed-logo.svg" alt="logo"></a>
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="files/Gharibdoost_Resume.pdf" target="_blank" role="menuitem" class="resume navigation-list__item">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="myflix">
+    <h1>Meet app</h1>
+    <img src="img/myflix-screen1.JPG" class="screen" alt="myflix-project-image">
+    <h2>About:</h2>
+    <p>
+      MyFlix is a movie application which displays information about movies like description, Genre,
+      Director and etc. The project is divided in two parts: A front-end side called myFlix-Client and
+      a server side named Movie-API.
+
+      Users are enabled to register, update their information and create
+      a list of favourite movies. MyFlix-Client is completed using React. It is based on its existing
+      server side application. Movie-API  is created  to provide users information about different movies.
+      This is a REST API that is built using JavaScript, Node.js, Express, and MongoDB.
+    </p>
+    <h2>Goals:</h2>
+    <p>
+      The server-side component of the myFlix app, provides users with access to information about different
+      movies. Users will be able to sign up, update their user information, and create a list of favorite movies.
+      The client-side of the program is created using React, based on its server-side code.
+    </p>
+    <img src="img/myflix-screen2.JPG" class="screen" alt="myflix-project-image">
+    <h2>Features:</h2>
+    <div>
+      server-side:
+      <ul>
+      <li>Returns a list of movies</li>
+      <li>Returns information about movies, genre, director</li>
+      <li>New user are able to register, deregister, uppdate their info and create a list of favourite movies</li>
+      </ul>
+      Client-side
+      <ul>
+      <li>Displays a list of movies in main view</li>
+      <li>Filtering the movies in the list and selecting a movie for more details</li>
+      <li>Includes single movie view, genre view and director view to provide information</li>
+      <li>Has a login view and register view</li>
+      <li>Includes a profile view to update the user info and display and edit the list of favourite movies</li>
+    </ul>
+    </div>
+    <h2>
+      Technologies:
+    </h2>
+    <div>
+      The following technologies are used:
+      <ul>
+        <li>MongoDB</li>
+        <li>Express</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>React Redux</li>
+        <li>React Bootstrap</li>
+        <li>Parcel</li>
+        <li>Babel</li>
+      </ul>
+    </div>
+  </div>
+  </main>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/hamedghd" target="_blank"><img src="img/github-white.svg" class="github" alt="Github"></a>
+      <a href="https://www.linkedin.com/in/hamed-gharibdoost/" target="_blank"><img src="img/linkedin-circle-white.svg" class="linkedin" alt="LinkedIn"></a>
+    </div>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+</html>
