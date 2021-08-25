@@ -20,17 +20,19 @@ Colors used:
 :root {
   /* backgound colors: */
   --bg1-color: #121212;
-  --bg2-color: #61dffa;
+  --bg2-color: #5778AA;
   --bg3-color: #fff;
 
   /* text colors: */
   --txt1-color: white;
   --txt2-color: black;
   --txt3-color: #e0e0e0;
+  --txt4-color: #5778AA;
 
   /* link colors: */
   --lnk1-color: white;
   --lnk2-color: #e0e0e0;
+  --lnk3-color: #5778AA;
 
   /* border colors: */
   --bd1-color: white;
@@ -65,7 +67,7 @@ body {
 
   /* Sets the colors */
   background-color: var(--bg1-color);
-  color: var(--txt3-color);
+  color: var(--txt1-color);
 
   /* Sets margin */
   margin-left: 100px;
@@ -81,7 +83,7 @@ button {
 h1 {
   font-size: var(--font-size6);
   font-weight: var(--font-weight2);
-  color: var(--txt1-color);
+  /* color: var(--txt1-color); */
 }
 
 h2 {
@@ -93,6 +95,10 @@ h2 {
 h3 {
   font-size: var(--font-size2);
   font-weight: var(--font-weight2);
+}
+
+p {
+  text-align: justify;
 }
 
 a {
@@ -126,8 +132,13 @@ a:active {
 
 .my-link {
   /* The links inside the page contents */
-  color: var(--lnk2-color);
+  color: var(--lnk3-color);
   text-decoration: underline;
+}
+
+.project-image {
+  margin-top: 20px;
+  width: 100%;
 }
 
 .page-header {
@@ -173,6 +184,10 @@ a:active {
   color: var(--lnk1-color);
 }
 
+.hello {
+  color: var(--txt4-color);
+}
+
 .profile {
   width: 80%;
   height: 100%;
@@ -205,9 +220,9 @@ a:active {
 }
 
 .resume {
-  background-color: var(--bg3-color);
+  background-color: var(--bg2-color);
   border-radius: 3px;
-  color: var(--txt2-color);
+  color: var(--txt1-color);
   padding: 10px;
 }
 
@@ -253,14 +268,14 @@ button {
   font-family: inherit;
 
   /* style button */
-  background-color: var(--bd1-color);
-  color: var(--txt2-color);
+  background-color: var(--bg2-color);
+  color: var(--txt1-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
 
   /* width of the border, type, color */
-  border-bottom: 2px solid var(--bd1-color);
+  /* border-bottom: 2px solid var(--bd1-color); */
   transition: 0.2s opacity;
 }
 
@@ -273,6 +288,20 @@ button:focus,
 
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
+}
+
+.pokedex1 {
+  width: 30%;
+  float: right;
+
+  /* top | right | bottom | left */
+  margin: 0 10% 10% 20%;
+}
+
+.pokedex2 {
+  width: 30%;
+  float: left;
+  margin: 0 20% 10% 10%;
 }
 
 /* start grid fallback */
