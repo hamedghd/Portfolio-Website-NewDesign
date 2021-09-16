@@ -315,6 +315,13 @@ button:focus,
   margin-left: 25%;
 }
 
+.screen-chat {
+  width: 20%;
+  margin-top: 20px;
+  margin-right: 40%;
+  margin-left: 40%;
+}
+
 .meet {
   max-width: 100%;
   margin: 20px;
@@ -475,18 +482,16 @@ input[type=submit]:hover {
   background-color: var(--bg3-color);
 }
 
-.contact-form {
-  /* background-color: var(--bg3-color); */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: var(--txt3-color);
-  text-align: left;
   padding: 20px;
-  width: 50%;
-  max-width: 1024px;
-  margin: 0 auto;
-  border-radius: 3px;
-  border: 1px solid white;
+  width: 100%;
+  margin: 20px;  
 }
-
 .standard-label-tel {
   margin-right: 0;
 }
@@ -504,4 +509,9 @@ input[type=submit]:hover {
   width: 100%;
   background-color: var(--bg1-color);
   color: var(--txt1-color);
+}
+
+span {
+  color: var(--bg2-color);
+  font: 60px !important;
 }
